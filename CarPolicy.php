@@ -15,8 +15,6 @@ class CarPolicy {
     }
 
 
-
-
     public function getTotalYearsNoClaims()
 {
      $currentDate = new DateTime();
@@ -26,8 +24,10 @@ class CarPolicy {
 }
 
 
+
+
     public function __toString() {
-    return $this->policyNumber;
+    return $this->policyNumber . ": ";
 }
 
 
